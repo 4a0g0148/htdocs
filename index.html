@@ -24,12 +24,17 @@
     <!-- Custom styles for this template -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+    <script type="text/javascript" src="http://demonstration.abgne.tw/jquery/jquery.easing.1.3.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/main.js"></script>
   </head>
   
 <!-- NAVBAR
 ================================================== -->
   <body style="background-color:#89B9D2;">
-
+<a href="#" id="header"></a>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -46,11 +51,8 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="info.html">公司簡介</a></li>
-                <li><a href="#產品介紹">產品介紹</a></li>
-                <li><a href="#聯絡我們">聯絡我們</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">公司簡介 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -61,6 +63,9 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
+                <li class="active"><a href="#Areas">產區介紹</a></li>
+                <li><a href="#Products">產品介紹</a></li>
+                <li><a href="#News" >新聞</a></li>
               </ul>
               <form class="navbar-form navbar-left" role="search" action="http://www.google.com/search" method=get>
   				<div class="form-group">
@@ -159,21 +164,6 @@
     </div><!-- /.carousel -->
 
 
-
-
-<script>
-$(document).ready(function(){
-  $(".mouseevent").mouseover(function(){
-	  $(this).css("background-color","#81B2CC");
-  });
-  $(".mouseevent").mouseout(function(){
-	  $(this).css("background-color","#89B9D2");
-  });
-});
-</script>
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -209,8 +199,10 @@ $(document).ready(function(){
 
 <!-- Large modal -->
 <br><br>
-<div align="center">
+
+<div style="position:absolute;right:40px">
 <button  class="btn btn-primary"  data-toggle="modal" data-target=".bs-example-modal-sm">聯絡我們</button>
+<button onclick="'#header'" class="btn btn-primary" id="gotop"  >回頁首</button>
 </div>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog modal-sm">
@@ -237,16 +229,7 @@ $(document).ready(function(){
     </div><!-- /.modal-dialog -->
   </div>
 
-
-
-
-
-
-
-      
     <!-- Placed at the end of the document so the pages load faster -->
-    
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+   
   </body>
 </html>
